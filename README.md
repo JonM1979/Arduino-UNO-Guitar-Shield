@@ -1,2 +1,2 @@
-# Arduino-UNO-Guitar-Shield
-This project uses an Arduino UNO in combination with an Arduino Shield to create a guitar pedal that allows for multiple effects to be used.
+# KiCad-Files
+Here are the files for components to the electric schematics, Gerber files, and PCB layout design. If you have any questions, please let me know! 
