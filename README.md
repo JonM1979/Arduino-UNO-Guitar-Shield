@@ -11,5 +11,5 @@ Using the original schematic as a reference, I learned how to:
 * Design custom footprints for parts not available in any library.
 Once the schematic was complete, I moved on to the PCB layout. I used KiCad’s Arduino UNO shield template and followed ElectroSmash’s layout closely to ensure compatibility and fit. This phase taught me how to manage component placement, routing, and board constraints.
 
-*Summary* 
+**Summary** 
 This project was a hands-on introduction to the full PCB design and manufacturing workflow. It gave me practical experience in schematic design, footprint management, layout planning, and preparing files for fabrication. If you have any questions or suggestions, feel free to reach out!
