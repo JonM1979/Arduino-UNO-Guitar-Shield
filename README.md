@@ -1,45 +1,27 @@
-# Arduino-UNO-Guitar-Shield
+# Build Process
 
-** This project is based on ElectroSmash's Arduino UNO Shield, all credit and 
-similarities goes to them: https://www.electrosmash.com/pedalshield-uno **
+**Assembly Process & Lessons Learned**\
+Building the PCB and assembling all components was a hands-on learning experience that taught me valuable lessons in planning, problem-solving, and persistence.
 
-This repository documents my personal recreation of the PedalSHIELD UNO project, an open-source programmable guitar pedal based on the Arduino UNO.
+Once I received the manufactured PCB, I began by verifying that all components fit correctly and that there were no conflicts with the assigned footprints. During the initial soldering phase—starting with the header pins—I encountered unexpected voltage readings while testing with a multimeter. This led me to discover that the header pins had been improperly soldered.
 
-**The Primary Goal of This Project Is Educational:**
-I undertook this build to deepen my understanding of PCB design and hardware manufacturing workflows. By reverse-engineering and rebuilding an existing open-source project, I aimed to:
+Through this, I learned how to use solder wick and a solder vacuum to remove excess solder and rework joints properly. After correcting the soldering, I was able to confirm the expected voltage values. Similar issues arose while soldering resistors, where I occasionally created cold joints or applied too much solder without forming a proper connection. Although these moments were frustrating, they pushed me to improve my soldering technique and remain persistent through the process. 
 
-* Learn the fundamentals of schematic capture and PCB layout.
-* Gain hands-on experience with EDA tools and fabrication processes.
-* Understand the practical challenges of bringing a hardware design from concept to physical board.
-* Explore embedded audio processing using Arduino.
+**Design Improvements & Future Revisions**\
+Reflecting on the build process, there are several improvements I would make in a future version of the board:
 
-**This Repo Includes:**
-* My custom PCB design files (schematics, layout, Gerbers).
-* Notes and documentation on the design and manufacturing process.
-* Photos and testing results from the assembled board.
-* Reflections and lessons learned throughout the project.
+* Increase pad sizes: Larger pads would improve solderability and make the assembly process more accessible, especially for beginners.
+* Improve component alignment: Some parts were not perfectly centered, which I would correct in the next iteration for a cleaner and more professional layout.
 
-**Personal Modifications and Reflections:**
-While the core of this project was originally developed by ElectroSmash, I wanted to extend its functionality by integrating an OLED display to show the currently loaded effect on the Arduino. This small addition helped me explore how to interface displays with microcontrollers and consider user experience in hardware design.
+**Final Thoughts**
+This project reinforced a key principle in engineering: things rarely work perfectly the first time. Unexpected issues are part of the process, and learning how to troubleshoot and adapt is essential. The challenges I faced—whether technical or procedural—ultimately helped me grow as a designer and problem-solver.
 
-**Design Improvements:** 
-One key improvement I would make in a future revision is to increase the size of the copper pads. During assembly, I found that the small pad sizes made soldering more difficult—often resulting in cold joints or excessive solder use. Larger pads would improve solderability and make the process more forgiving and enjoyable. 
+While the assembly process was at times stressful, it was also incredibly rewarding. Mistakes and setbacks provided clear opportunities for improvement and gave me a deeper appreciation for the intricacies of PCB design and hardware development.
 
-I'm also considering a Version 2.0 of the board that uses SMD components to reduce the overall footprint. Ideally, I’d like to integrate the OLED display directly onto the PCB for a more compact and professional design.
+![Initial Build](https://github.com/user-attachments/assets/5f099bb3-45d2-48b5-8f8e-9a2a9b433389)  
 
-**What I Learned:**
-This project was a deep dive into the end-to-end PCB design workflow. I spent a significant amount of time learning how to:
+![Resistors and Capacitors](https://github.com/user-attachments/assets/a40b1932-bb51-4009-a4c3-22fa24a6beba)
 
-* Use KiCad 9 for schematic capture and PCB layout.
-* Create custom symbols and footprints for components not found in the standard libraries.
-* Select appropriate footprints (and learn the difference between THT and SMD).
-* Troubleshoot issues like obsolete parts, incorrect footprints, and soldering challenges.
+<img src= "https://github.com/user-attachments/assets/a40b1932-bb51-4009-a4c3-22fa24a6beba" width = "300" length= "300">
 
-I encountered many real-world problems—such as not finding a footprint for a 3PDT switch and having to create one from scratch, or dealing with solder bridges and cold joints during assembly. These challenges taught me how to problem-solve independently, research effectively, and persist through trial and error.
-
-**Final Thoughts:**
-Recreating this project gave me invaluable hands-on experience in electronics design and manufacturing. It wasn’t just about building a pedal—it was about learning how to bring a hardware idea to life, from schematic to soldering iron. I now feel much more confident in my ability to design, prototype, and iterate on custom PCBs.
-
-![PCB Layout](https://github.com/user-attachments/assets/64b028d7-fed0-4b4b-ba33-3ed0487600c4)
-
-![Full Schematic](https://github.com/user-attachments/assets/9fbe058b-4308-4460-aa3c-8c05dd3160ef)
+![Op Amp and Switches](https://github.com/user-attachments/assets/ea77b1cd-227f-4776-85b3-a61e1525fc5b)
