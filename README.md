@@ -20,8 +20,10 @@ While the assembly process was at times stressful, it was also incredibly reward
 
 ![Initial Build](https://github.com/user-attachments/assets/5f099bb3-45d2-48b5-8f8e-9a2a9b433389)  
 
-![Resistors and Capacitors](https://github.com/user-attachments/assets/a40b1932-bb51-4009-a4c3-22fa24a6beba)
+<p align = "center">
+<img src= "https://github.com/user-attachments/assets/a40b1932-bb51-4009-a4c3-22fa24a6beba" width = "750" length= "500">
+</p>
 
-<img src= "https://github.com/user-attachments/assets/a40b1932-bb51-4009-a4c3-22fa24a6beba" width = "300" length= "300">
-
-![Op Amp and Switches](https://github.com/user-attachments/assets/ea77b1cd-227f-4776-85b3-a61e1525fc5b)
+<p align = "center">
+<img src = "https://github.com/user-attachments/assets/ea77b1cd-227f-4776-85b3-a61e1525fc5b" width = "750" length = "500">
+</p>
