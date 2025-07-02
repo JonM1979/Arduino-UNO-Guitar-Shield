@@ -39,6 +39,7 @@ I encountered many real-world problems—such as not finding a footprint for a 3
 
 **Final Thoughts:**
 Recreating this project gave me invaluable hands-on experience in electronics design and manufacturing. It wasn’t just about building a pedal—it was about learning how to bring a hardware idea to life, from schematic to soldering iron. I now feel much more confident in my ability to design, prototype, and iterate on custom PCBs.
+
 ![PCB Layout](https://github.com/user-attachments/assets/64b028d7-fed0-4b4b-ba33-3ed0487600c4)
 
 ![Full Schematic](https://github.com/user-attachments/assets/9fbe058b-4308-4460-aa3c-8c05dd3160ef)
