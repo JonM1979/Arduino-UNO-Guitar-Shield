@@ -27,3 +27,7 @@ While the assembly process was at times stressful, it was also incredibly reward
 <p align = "center">
 <img src = "https://github.com/user-attachments/assets/ea77b1cd-227f-4776-85b3-a61e1525fc5b" width = "750" length = "500">
 </p>
+
+<p align = "center">
+<img src = "https://github.com/user-attachments/assets/ecb2e30a-74d8-4848-992a-03ed3408cc10" width = "1000" length = "1000">
+</p>
