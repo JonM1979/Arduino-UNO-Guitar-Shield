@@ -47,7 +47,7 @@ void setup()
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
-  display.println("Distortion!");
+  display.println("Fuzz!");
   display.display();
   delay(2000);
   display.clearDisplay();
@@ -85,7 +85,7 @@ void loop()
   // Scroll full screen
  display.setCursor(0, 0);
  display.setTextSize(1);
- display.println("Distortion!");
+ display.println("Fuzz!");
  display.display();
  display.startscrollright(0x00, 0x07);
  delay(4500);
