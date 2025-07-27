@@ -9,7 +9,7 @@
 
 // defining OLED display using I2C
 #define SCREEN_WIDTH 128
-#define SCREEN_HEIGHT 64
+#define SCREEN_HEIGHT 32
 #define OLED_RESET -1
 #define SCREEN_ADDRESS 0x3C
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
@@ -81,7 +81,7 @@ const byte waveform[]=
 0x74,0x75,0x75,0x76,0x77,0x78,0x78,0x79,0x7a,0x7b,0x7c,0x7c,0x7d,0x7e,0x7f,0x80,
 };
 
-//defining harware resources.
+//defining hardware resources.
 #define LED 13
 #define FOOTSWITCH 12
 #define TOGGLE 2
@@ -102,7 +102,7 @@ void setup()
 {
 
   Serial.begin(9600);
-    // initialize the OLED object
+    //Initialize the OLED object
   if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
     Serial.println(F("SSD1306 allocation failed"));
     for(;;); // Don't proceed, loop forever
