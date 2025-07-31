@@ -19,3 +19,11 @@ Before this project, I had no experience with PCB design beyond basic electrical
 | R1, R2 | 2 | 1M | Resistor, 1%,1/4W | MFR-25FRF52-1M | 
 | R11 | 1 | 1M2 | Resistor, 1%,1/4W | MFR-25FRF52-1M2 | 
 | RV1 | 1 | 500k | resistor trimmer | PV36W504C01B00 | 
+| D1 | 1 | LED 3mm Blue | LED | SSL-LX3044USBC | 
+| U1 | 1 | TL972 pdip-8 | op-amp rail-to-rail | TL972IP | 
+| IC Socket | 1 | dip 8 socket | socket for dip8 | 1-2199298-2 |
+| SW1, SW2 | 2 | Pushbutton | off-on pushbutton | R13-24A-05-WH-B |
+| SWITCH_3PDT | 1 | 3DPT | 3DPT | SF17020F-0302-21R-L-015 | 
+| SWITCH_INV | 1 | Toggle Switch | SPDT Toggle Switch | 100SP1T1B1M1QEH | 
+| Connector Pins | 1 | 40 Pin Header | 2.54 Pitch Pin Header | 710-61304011121 | 
+| Input, Output Jack | 2 | 1/4 Audio Jack | Stereo 6.35mm Jack | NMJ6HCD2 | 
