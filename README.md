@@ -7,3 +7,15 @@ To troubleshoot, I adjusted the potentiometer resistance, inspected and re-solde
 Despite the technical challenges, this project was a valuable learning experience. I gained hands-on exposure to the full PCB design workflow—from schematic creation to board layout, manufacturing, and assembly. I also learned how component selection, footprint choice, and layout decisions can significantly impact the build process.
 
 Before this project, I had no experience with PCB design beyond basic electrical concepts. I taught myself KiCAD through online resources and video tutorials. While the learning curve was steep, the process was incredibly rewarding. I’m grateful to the Electrosmash team for making their work open source, which provided a solid foundation and guidance throughout the project. I hope this inspires others to explore PCB design as well!
+
+| Reference | QTY | Value | Description | Part ID |
+| --- | --- | --- | --- | --- |
+|C5,C2, C7, C8, C9| 5 | 6.8n | Ceramic Cap |  SR211C682MARTR1 |
+| C3, C6, C10 | 3 | 4.7u | Electrolytic Cap | ECE-A1EKA4R7 |
+| C1, C11 | 2 | 100n | Ceramic Cap |  SR211C104KARTR1 | 
+| C4 | 1 | 270p | Ceramic Cap | D271K20Y5PH63L6R | 
+| R12,R13, R10, R9, R6, R4, R3 | 7 | 4.7k | Resistor, 1%,1/4W | MFR-25FRF52-4K7 | 
+| R5, R7, R8 | 3 | 100k | Resistor, 1%,1/4W | MFR-25FRF52-100K |
+| R1, R2 | 2 | 1M | Resistor, 1%,1/4W | MFR-25FRF52-1M | 
+| R11 | 1 | 1M2 | Resistor, 1%,1/4W | MFR-25FRF52-1M2 | 
+| RV1 | 1 | 500k | resistor trimmer | PV36W504C01B00 | 
