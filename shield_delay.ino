@@ -1,4 +1,7 @@
 // CC-by-www.Electrosmash.com, modified by JonM1979
+// unfortunately, the OLED screen takes up too much space with this code so it doesn't compile
+// I will leave the code like this for those who have more than 2KB of space on their board
+// remove the code referencing the OLED screen and the effect should work normally!
 // Based on OpenMusicLabs previous works.
 // pedalshield_uno_delay.ino reads the ADC, saves it into the DelayBuffer[] array and plays it into the PWM output.
 //  pressing the pushbutton_1 or 2 makes the delay longer or shorter
