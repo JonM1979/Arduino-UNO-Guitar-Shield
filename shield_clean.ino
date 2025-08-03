@@ -8,7 +8,7 @@
 
 // defining OLED display using I2C
 #define SCREEN_WIDTH 128
-#define SCREEN_HEIGHT 64
+#define SCREEN_HEIGHT 32
 #define OLED_RESET -1
 #define SCREEN_ADDRESS 0x3C
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
@@ -43,7 +43,7 @@ void setup()
   // Clear the buffer.
   display.clearDisplay();
   // Display Text
-  display.setTextSize(1);
+  display.setTextSize(3);
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
   display.println("Clean!");
@@ -78,52 +78,11 @@ void loop()
   //Turn on the LED if the effect is ON.
   if (digitalRead(FOOTSWITCH)) { 
     digitalWrite(LED, HIGH); 
-  
-    // Scroll full screen
-   display.setCursor(0, 0);
-   display.setTextSize(1);
-   display.println("Clean!");
-   display.display();
-   display.startscrollright(0x00, 0x07);
-   delay(4500);
-   display.stopscroll();
-   delay(1000);
-   display.startscrollleft(0x00, 0x07);
-   delay(4500);
-   display.stopscroll();
-   delay(1000);
-   display.startscrolldiagright(0x00, 0x07);
-   delay(4500);
-   display.startscrolldiagleft(0x00, 0x07);
-   delay(4500);
-   display.stopscroll();
-   display.clearDisplay();
   }
   else  {
     digitalWrite(LED, LOW); }
   
   //nothing else here, all happens in the Timer 1 interruption.
-
-  // Scroll full screen
- display.setCursor(0, 0);
- display.setTextSize(1);
- display.println("Clean!");
- display.display();
- display.startscrollright(0x00, 0x07);
- delay(4500);
- display.stopscroll();
- delay(1000);
- display.startscrollleft(0x00, 0x07);
- delay(4500);
- display.stopscroll();
- delay(1000);
- display.startscrolldiagright(0x00, 0x07);
- delay(4500);
- display.startscrolldiagleft(0x00, 0x07);
- delay(4500);
- display.stopscroll();
- display.clearDisplay();
-  
 }
 
 ISR(TIMER1_CAPT_vect) 
