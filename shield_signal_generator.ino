@@ -14,7 +14,7 @@
 #define SCREEN_ADDRESS 0x3C
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-const byte waveform[]=
+const byte waveform[] PROGMEM =
 {0x80,0x80,0x81,0x82,0x83,0x83,0x84,0x85,0x86,0x87,0x87,0x88,0x89,0x8a,0x8a,0x8b,
 0x8c,0x8d,0x8e,0x8e,0x8f,0x90,0x91,0x91,0x92,0x93,0x94,0x95,0x95,0x96,0x97,0x98,
 0x98,0x99,0x9a,0x9b,0x9b,0x9c,0x9d,0x9e,0x9f,0x9f,0xa0,0xa1,0xa2,0xa2,0xa3,0xa4,
@@ -97,6 +97,7 @@ const byte waveform[]=
 int input,inputa,inputb, speed=1;
 int counter=0;
 int sample=0;
+bool displayActive = false;
 
 void setup() 
 {
@@ -111,10 +112,12 @@ void setup()
   // Clear the buffer.
   display.clearDisplay();
   // Display Text
-  display.setTextSize(1);
+  display.setTextSize(2);
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
-  display.println("Signal Generator!");
+  display.println("Signal");
+  display.setCursor(0, 16);
+  display.println("Generator!");
   display.display();
   delay(2000);
   display.clearDisplay();
@@ -126,6 +129,7 @@ void setup()
   pinMode(PUSHBUTTON_2, INPUT_PULLUP);
   pinMode(LED, OUTPUT);
   
+
   // setup ADC
   ADMUX = 0x60; // left adjust, adc0, internal vcc
   ADCSRA = 0xe5; // turn on adc, ck/32, auto trigger
@@ -140,36 +144,18 @@ void setup()
   ICR1L = (PWM_FREQ & 0xff);
   DDRB |= ((PWM_QTY << 1) | 0x02); // turn on outputs
   sei(); // turn on interrupts - not really necessary with arduino
-  }
+}
 
 void loop() 
 {
   //Turn on the LED if the effect is ON.
   if (digitalRead(FOOTSWITCH)) {
-      digitalWrite(LED, HIGH);
-  
-      // Scroll full screen
-     display.setCursor(0, 0);
-     display.setTextSize(1);
-     display.println("Signal Generator!");
-     display.display();
-     display.startscrollright(0x00, 0x07);
-     delay(4500);
-     display.stopscroll();
-     delay(1000);
-     display.startscrollleft(0x00, 0x07);
-     delay(4500);
-     display.stopscroll();
-     delay(1000);
-     display.startscrolldiagright(0x00, 0x07);
-     delay(4500);
-     display.startscrolldiagleft(0x00, 0x07);
-     delay(4500);
-     display.stopscroll();
-     display.clearDisplay();
+    digitalWrite(LED, HIGH);
+
   }
   else { 
     digitalWrite(LED, LOW); }
+    display.clearDisplay();
   
   //nothing else here, all happens in the Timer 1 interruption.
 }
@@ -192,12 +178,15 @@ if (!digitalRead(PUSHBUTTON_2)) {
     }
 }
 
-input = waveform[sample]-30000;
+// input = waveform[sample]-30000;
+input = pgm_read_byte_near(waveform + sample) - 30000;
 
 sample=sample+speed;
 if(sample>1023)sample=0;
 
   //write the PWM signal
- OCR1AL =waveform[sample];// (((input + 0x08000)) >> 8); // convert to unsigned, send out high byte
- OCR1BL = waveform[sample]; // send out low byte
+ //OCR1AL =waveform[sample];// (((input + 0x08000)) >> 8); // convert to unsigned, send out high byte
+ //OCR1BL = waveform[sample]; // send out low byte
+ OCR1AL = pgm_read_byte_near(waveform + sample);
+ OCR1BL = pgm_read_byte_near(waveform + sample);
 }
