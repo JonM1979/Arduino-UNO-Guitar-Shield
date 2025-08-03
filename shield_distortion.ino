@@ -48,7 +48,7 @@ void setup()
   // Clear the buffer.
   display.clearDisplay();
   // Display Text
-  display.setTextSize(1);
+  display.setTextSize(2);
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
   display.println("Distortion!");
@@ -84,26 +84,6 @@ void loop()
   //  Turn on the LED if the effect is ON.
   if (digitalRead(FOOTSWITCH)) {
     digitalWrite(LED, HIGH); 
-
-    // Scroll full screen
-   display.setCursor(0, 0);
-   display.setTextSize(1);
-   display.println("Distortion!");
-   display.display();
-   display.startscrollright(0x00, 0x07);
-   delay(4500);
-   display.stopscroll();
-   delay(1000);
-   display.startscrollleft(0x00, 0x07);
-   delay(4500);
-   display.stopscroll();
-   delay(1000);
-   display.startscrolldiagright(0x00, 0x07);
-   delay(4500);
-   display.startscrolldiagleft(0x00, 0x07);
-   delay(4500);
-   display.stopscroll();
-   display.clearDisplay();
   }
     else  {
       digitalWrite(LED, LOW); }
