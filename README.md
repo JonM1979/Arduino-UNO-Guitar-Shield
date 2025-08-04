@@ -37,8 +37,6 @@ This project was a deep dive into the end-to-end PCB design workflow. I spent a 
 
 I encountered many real-world problems—such as not finding a footprint for a 3PDT switch and having to create one from scratch, or dealing with solder bridges and cold joints during assembly. These challenges taught me how to problem-solve independently, research effectively, and persist through trial and error.
 
-**Final Thoughts:**
-Recreating this project gave me invaluable hands-on experience in electronics design and manufacturing. It wasn’t just about building a pedal—it was about learning how to bring a hardware idea to life, from schematic to soldering iron. I now feel much more confident in my ability to design, prototype, and iterate on custom PCBs.
 
 ![PCB Layout](https://github.com/user-attachments/assets/64b028d7-fed0-4b4b-ba33-3ed0487600c4)
 
