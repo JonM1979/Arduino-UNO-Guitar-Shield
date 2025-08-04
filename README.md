@@ -11,6 +11,8 @@ Before this project, I had no experience with PCB design beyond basic electrical
 
 [![Watch the video](https://img.youtube.com/vi/rHayZxBrjfs/0.jpg)](https://www.youtube.com/watch?v=rHayZxBrjfs)
 
+👉 [Watch the video on YouTube](https://www.youtube.com/watch?v=rHayZxBrjfs)
+
 
 | Reference | QTY | Value | Description | Part ID |
 | --- | --- | --- | --- | --- |
