@@ -8,6 +8,10 @@ Despite the technical challenges, this project was a valuable learning experienc
 
 Before this project, I had no experience with PCB design beyond basic electrical concepts. I taught myself KiCAD through online resources and video tutorials. While the learning curve was steep, the process was incredibly rewarding. I’m grateful to the Electrosmash team for making their work open source, which provided a solid foundation and guidance throughout the project. I hope this inspires others to explore PCB design as well!
 
+
+[![Watch the video](https://img.youtube.com/vi/rHayZxBrjfs?si=lNqeSS6rUxPLgmmf/0.jpg)](https://youtu.be/rHayZxBrjfs?si=lNqeSS6rUxPLgmmf)
+
+
 | Reference | QTY | Value | Description | Part ID |
 | --- | --- | --- | --- | --- |
 |C5,C2, C7, C8, C9| 5 | 6.8n | Ceramic Cap |  SR211C682MARTR1 |
